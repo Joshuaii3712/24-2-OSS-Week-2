@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2 : Form CSS</title>
+
+    <style>
+        body{
+            background-color: #f8f9fa;
+            font-size: 1rem;
+            margin-right: 17%;
+            margin-left:17%;
+            
+        }
+        h2{
+            font-weight: 400;
+            margin-bottom: -10px;
+        }
+        h4 {
+            font-weight: 400;
+            font-size: 1.1rem;
+        }
+        hr{
+            margin-right: 120px;
+        }
+        input, select, option {
+            font-size:1.0rem;
+            line-height:25px;
+            margin:5px;
+            margin-left:-1px;
+            margin-bottom: 20px;
+            width:80%;
+            padding: 3px;
+            padding-left:20px;
+            border: 1px solid lightgray;
+            border-radius:5px;
+        }
+        input:focus, select:focus, option:focus{
+            outline: none;
+            border-color: #0d6efd;
+            box-shadow: 0 0 5px #0d6efd;
+        }
+        #header {
+            align-content: center;
+            text-align: center;
+            margin: 20px;
+            margin-bottom: 40px;
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        #icon {
+            text-align: center;
+            width: 8%;
+            max-width: 100px;
+            margin-bottom: -10px;
+        }
+        #cart {
+            margin:20px;
+            margin-right:22%;
+            float:right;
+            right:200px;
+            width:20%;
+            
+            
+        }
+        #cartTitle{
+            color:#0d6efd;
+            margin-bottom: 30px;
+            
+            position:relative;
+            bottom:75px;
+            left:80px;
+            width:300px;
+            
+            
+            
+        }
+        #cartNum{
+            float:right;
+            background-color: #0d6efd;
+            color:white;
+            padding: 2px 16px;
+            border-radius: 25px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            position:relative;
+        }
+        #cartItem {
+            margin-right:13%;
+            border-radius: 30px;
+            list-style-type: none;
+            position:absolute;
+            right:90px;
+            top:280px;
+            width:290px;
+        }
+        .cartList {
+            background-color: white;
+            border: 1px solid lightgray;
+            margin-left:-20px;
+            
+            padding-left:30px;
+            padding-bottom:5px;
+            
+        }
+        .cartList:nth-child(4){
+            background-color: #e9ecef;
+            color:darkgreen;
+        }
+        .cartList:first-child {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .cartList:nth-child(5){
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .money{
+            float: right;
+            margin:-35px 30px;
+            color:gray;
+            
+        }
+        .description {
+            color:gray;
+        }
+
+        .productName {
+            margin-top:10px;
+            margin-bottom: 5px;
+        }    
+        #promoApply {
+            margin:10px;
+   
+            padding:5px 10px 24px 10px;           
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            background-color: white;
+            height: 30px;
+            position:absolute;
+            width:290px;
+            right: 275px;
+            bottom: 20px;
+        }
+        #promoInput {
+            font-size: 1.0rem;
+            margin-right: -8px;
+            margin-left:2px;
+            border-radius: 0px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            width:180px;
+            height: 18px;
+            border: 1px solid lightgray;
+            padding:10px;
+            
+
+        }
+        #promoButton {
+            font-size: 1.0rem;
+            border-radius: 0px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: gray;
+            border: 1px solid gray;
+            color:white;
+            padding:10px;
+        }
+
+        #inputs {
+            float:left;
+            width:70%;
+            margin-top: -180px;
+            margin-left: 30px;
+            margin-bottom: 250px;
+            
+        }
+        
+       
+        #userFirstName{
+            width:262px;
+            margin-right: 20px;
+        }
+        #userFirstLabel {
+            margin-right:230px;
+        }
+        #userLastName{
+            width:255px;
+        }
+
+        #emailMark {
+            border: 1px solid lightgray;
+            background-color: #e9ecef;
+            font-size: 1.0rem;
+            border-radius: 0px;
+            padding: 3px 10px 7px 10px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        #username{
+            border-radius: 0px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 524px;
+        }
+
+        #countryLabel{
+            margin-right:170px;
+        }
+        #stateLabel{
+            margin-right:180px;
+        }
+
+        #country{
+            width:220px;
+            padding-top:5px;
+            padding-bottom:5px;
+        }
+        #state{
+            width:200px;
+            padding-top:5px;
+            padding-bottom:5px;
+        }
+        #zip{
+            width:122px;
+        }
+        .r{
+            margin-left:-270px;
+        }
+        .rt{
+            margin-left:-270px;
+        }
+
+        .cb{
+            margin-left:-270px;
+        }
+        .cbt{
+            margin-left:-270px;
+        }
+
+        #nameOnCard {
+            width:255px;
+            margin-right: 20px;
+            margin-bottom: 2px;
+        }
+        #creditCardNum {
+            width: 255px;
+            margin-bottom: -2px;
+        }
+        #nameOnCardLabel{
+            margin-right:200px;
+            
+        }
+        .sublabel1 {
+            color: gray;
+        }
+
+        .sublabel2 {
+            color: gray;
+            font-size: 0.9rem;
+
+        }
+
+        #expirationLabel{
+            margin-right:110px;
+        }
+
+        #expiration {
+            width: 120px;
+            margin-right: 30px;
+        }
+        #cvv {
+            width:120px;
+        }
+        #finalButton{
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            color:white;
+            font-size: 1.2rem;
+            height:42px
+        }
+
+        #footer {
+            position:absolute;
+            margin-top: 1100px;
+            text-align: center;
+            left:45%;
+            
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <img id="icon" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg">
+        <h2>Checkout form</h2>
+        <p>Below is an example form built entirely with Bootstrap’s form controls.
+            Each required form group has a validation state that can be triggered by
+            attempting to submit the form without completing it.</p>
+    </div>
+
+    <br>
+    <div id="cart">
+        <h2 id="cartTitle">
+            <span>Your cart</span>
+            <span id="cartNum">3</span>
+        </h2>
+        <ul id="cartItem">
+            <li class="cartList">
+                <div>
+                <h4 class="productName">Product name</h4>
+                <small class="description">Brief description</small>
+                <span class="money">$12</span>
+                </div>    
+            </li>
+            <li class="cartList">
+                <div>
+                <h4 class="productName">Second product</h4>
+                <small class="description">Brief description</small>                
+                <span class="money">$8</span>
+                </div>
+            </li>
+            <li class="cartList">
+                <div>
+                <h4 class="productName">Third item</h4>
+                <small class="description">Brief description</small>              
+                <span class="money">$5</span>
+                </div>
+            </li>
+            <li class="cartList">
+                <div>
+                <h4 class="productName">Promo code</h4>
+                <small class="description">EXAMPLECODE</small>
+                <span class="money">-$5</span>
+                </div>                
+            </li>
+            <li class="cartList">
+                <div>
+                <h4 class="productName">Total (USD)</h4>               
+                <span class="money">$20</span>
+                </div>
+            </li>
+        </ul>
+        <form id="promoApply">
+            <input id="promoInput" type="text" id="promoCode" placeholder="Promo code">
+            <button id="promoButton" type="submit">Redeem</button>
+        </form>
+    </div>
+    <div id="inputs">
+        <h2>Billing address</h2>
+        <br>
+        <form id="userdata">
+    
+            <label id="userFirstLabel" for="userFirstName">First name</label><label for="userLastName">Last name</label><br />
+            <input type="text" id="userFirstName" name="userFirstName"><input type="text" id="userLastName" name="userLastName"><br />
+
+            </span>
+            <label for="username">Username</label><br />
+            <span id="emailMark">@</span><input type="text" id="username" name="username" placeholder="Username"><br />
+            <label for="address">Email <span class="sublabel1">(Optional)</span></label><br />
+            <input type="text" id="email" name="email" placeholder="you@example.com"><br />
+            <label for="address">Address</label><br />
+            <input id="address" name="address" placeholder="1234 Main St"></button><br />
+            <label for="detailAddress">Address 2 <span class="sublabel1">(Optional)</span></label><br />
+            <input id="detailAddress" name="detailAddress" placeholder="Apartment or suite"></input><br />
+            
+   
+            <label id="countryLabel" for="country">Country</label><label id="stateLabel" for="state">State</label><label for="zip">Zip</label><br />
+            
+            <span>
+            <select name="countries" id="country">
+                <option value="Choose...">Choose...</option>
+                <option value="United States">United States</option>
+            </select>
+            </span>
+            <span>
+            <select name="states" id="state">
+                <option value="Choose...">Choose...</option>
+                <option value="California">California</option>
+            </select>
+            </span>
+            <span>
+            <input type="text" id="zip" name="zip">
+            </span>
+            <hr />
+
+            <input class="cb" type="checkbox" name="sameAddress"><label class="cbt">Shipping address is the same as my billing address</label><br />
+            <input class="cb" type="checkbox" name="saveInfo"><label class="cbt">Save this information for next time</label><br />
+            <hr />
+            <h2>Payment</h2><br>
+            <input class="r" type="radio" name="cardoptions" id="creditCard"><label class="rt" for="creditCard">Credit card</label><br />
+            <input class="r" type="radio" name="cardoptions" id="debitCard"><label class="rt" for="debitCard">Debit card</label><br />
+            <input class="r" type="radio" name="cardoptions" id="paypal"><label class="rt" for="paypal">PayPal</label><br />
+            
+            <label id="nameOnCardLabel" for="nameOnCard">Name on card</label><label for="creditCardNum">Credit card number</label><br />
+            <span>
+            <input type="text" name="nameOnCard" id="nameOnCard">
+            </span>
+            <span>
+            <input type="text" name="creditCardNum" id="creditCardNum"><br /><label class="sublabel2" for="nameOnCard">Full name as displayed on card</label><br />
+            </span>
+            <br>
+            <label id="expirationLabel" for="expiration">Expiration</label><label for="cvv">CVV</label><br />
+            <input type="text" name="expriation" id="expiration">
+            <input type="text" name="cvv" id="cvv">
+            <hr />
+            <input type="submit" id="finalButton" value="Continue to checkout">
+        </form>
+    </div>
+    <div id="footer">
+        <p class="sublabel1">© 2017–2022 Company Name</p>
+        <a href="form1.html">Privacy.</a>
+        <a href="form1.html">Terms.</a>
+        <a href="form1.html">Support</a>
+    </div>
+</body>
+
+</html>

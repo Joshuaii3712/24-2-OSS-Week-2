@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button.btn{
+            background-color: green;
+            color: white;
+        }
+    </style>
+    <script>
+        function hello(){
+            alert("Hello World!");
+        }
+        function changecolor(obj){
+            obj.style.color = "orange";
+        }
+    </script>
+    
+</head>
+    
+
+<body>
+    <h1 onmousemove="changecolor(this)" onmouseout="this.style.color='#000000'">환영합니다</h1>
+    <button class="btn" onclick="hello()">Click me please!!</button>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample form</title>
+
+    <style>
+        #header{
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg">
+        <h2>Checkout form</h2>
+        <p>Below is an example form built entirely with Bootstrap’s form controls. 
+            Each required form group has a validation state that can be triggered by 
+            attempting to submit the form without completing it.</p>
+    </div>
+    <div id="inputs">
+        <h2>Billing address</h2>
+        <form id="userdata" action="form_ok.php">
+            <label for="userFirstName">First name</label><br/>
+            <input type="text" id="userFirstName" name="userFirstName"><br/>
+            <label for="userLastName">Last name</label><br/>
+            <input type="text" id="userLastName" name="userLastName"><br/>
+           
+            <input type="submit" value="저장">
+        </form>
+    </div>
+    
+</body>
+</html>
